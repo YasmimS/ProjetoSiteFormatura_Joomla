@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="pricingtables_modal" label="MOD_JDPRICINGTABLES_PRICING_TABEL_LABEL">
+		<field name="headerBacground" type="list" label="MOD_JDPRICINGTABLES_HEADER_BACKGROUND_LABEL" description="MOD_JDPRICINGTABLES_HEADER_BACKGROUND_DESC">
+			<option value="icon">MOD_JDPRICINGTABLES_ICON_LABEL</option>
+			<option value="media">MOD_JDPRICINGTABLES_MEDIA_LABEL</option>
+		</field>
+		<field name="headerBacground_upload" label="MOD_JDPRICINGTABLES_UPLOAD_IMAGE_LABEL" description="MOD_JDPRICINGTABLES_UPLOAD_IMAGE_DESC" showon="headerBacground:media" type="media" />
+		<field name="headerBacground_icon" label="MOD_JDPRICINGTABLES_ICON_LABEL" description="MOD_JDPRICINGTABLES_ICON_LABEL" showon="headerBacground:icon" type="text"  hint="fa fa-facebook"/>
+		<field name="title" label="MOD_JDPRICINGTABLES_TITLE_LABEL" description="MOD_JDPRICINGTABLES_TITLE_DESC" type="text" hint="Lite Plan" />
+		<field name="subtitle" label="MOD_JDPRICINGTABLES_SUB_TITLE_LABEL" description="MOD_JDPRICINGTABLES_SUB_TITLE_DESC" type="text" hint="Individuals and small teams"/>
+		<field name="pricing" label="MOD_JDPRICINGTABLES_PRICE_LABEL" description="MOD_JDPRICINGTABLES_PRICE_DESC" type="text" hint="$9" />
+		<field name="pricingColor" label="MOD_JDPRICINGTABLES_PRICE_COLOR_LABEL" description="MOD_JDPRICINGTABLES_PRICE_COLOR_DESC" type="color" />
+		<field name="period" label="MOD_JDPRICINGTABLES_PERIOD_LABEL" description="MOD_JDPRICINGTABLES_PERIOD_DESC" type="text" hint="/month" />
+		<field name="description" label="Description" rows="10"  cols="5" filter="raw" type="textarea"   />
+		<field name="buttonhide" type="radio" label="MOD_JDPRICINGTABLES_BUTTONHIDE" description="MOD_JDPRICINGTABLES_BUTTONHIDE" class="btn-group" default="0">
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	</field>
+		<field name="button_text" showon="buttonhide:1" type="text" filter="safehtml" label="BUTTON_TEXT_LABEL" description="BUTTON_TEXT_DESCRIPTION" default="Get Hour"/>
+		<field name="button_link" showon="buttonhide:1" type="menuitem" label="SELECT_A_MENU_LABEL"  description="SELECT_A_MENU_DESCRIPTION"  />
+		<field name="hightlight" type="radio" label="MOD_JDPRICINGTABLES_HIGHLIGHT_LABEL" description="MOD_JDPRICINGTABLES_HIGHLIGHT_DESC" class="btn-group" default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

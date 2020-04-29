@@ -1,0 +1,73 @@
+/*module me default class ye honi chahiye jd-pericing-table*/
+.pricing-card {
+	
+}
+.pricing-card .card {
+	border: none;
+	border-radius: 0;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.07);
+	width: 100%;
+}
+.pricing-card .card .card-header  {
+	border-radius: 0;
+	border-bottom: 0;
+	padding: 40px 20px;
+	text-align: center;
+	background: #fff;
+}
+.pricing-card .pricing-title{
+	font-weight: 700;
+	line-height: normal;
+	color: #171717;
+}
+.pricing-card .pricing-subtitle{
+	font-weight: 700;
+	line-height: normal;
+	color: #e43935;
+}
+.pricing-card .card .card-header p {
+	margin-bottom: 0;
+}
+.pricing-card .card .card-body {
+	padding: 0;
+	background: #fff;
+}
+.pricing-card .card .card-body ul {
+	padding-left: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+.pricing-card .card .card-body ul li {
+	border-bottom: 1px solid #dee2e6;
+	padding: 20px 20px;
+	text-align: center;
+}
+.pricing-card .card .card-body ul li:last-child{
+	border-bottom: none;
+}
+.pricing-card .card .card-footer {
+	border-radius: 0;
+	border-top: 0;
+	padding: 20px 20px;
+	background: #fff;
+	text-align: center;
+}
+.pricing-card .card .card-footer .price {
+	margin-bottom: 20px;
+}
+.pricing-card .card .card-footer .price small {
+	font-size: 60%;
+}
+.pricing-card .card .card-footer .btn {
+	border-radius: 0;
+	padding: 15px 20px;
+}
+.pricing-card .card .card-footer .btn:hover,
+.pricing-card .card .card-footer .btn:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+.pricing-card .card .card-footer .bottom-line {
+	margin-top: 20px;
+	margin-bottom: 0;
+}

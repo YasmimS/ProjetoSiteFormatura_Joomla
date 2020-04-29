@@ -1,0 +1,328 @@
+/* Bootstrap
+-------------- */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -ms-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+.collapse.in {
+  height: auto;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+.modal-header .close {
+  margin-top: 2px;
+}
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+.modal-body {
+  width: 98%;
+  position: relative;
+  max-height: 400px;
+  padding: 1%;
+}
+.modal-body iframe {
+  width: 100%;
+  max-height: none;
+  border: 0 !important;
+}
+.modal-form {
+  margin-bottom: 0;
+}
+.modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: inset 0 1px 0 #fff;
+  -moz-box-shadow: inset 0 1px 0 #fff;
+  box-shadow: inset 0 1px 0 #fff;
+  *zoom: 1;
+}
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal-footer:after {
+  clear: both;
+}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+/* Joomla JUI NOTE: Original .modal definition has to be commented */
+div.modal {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  z-index: 1050;
+  width: 80%;
+  margin-left: -40%;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
+div.modal.fade {
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -ms-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+  transition: opacity 0.3s linear, top 0.3s ease-out;
+  top: -25%;
+}
+div.modal.fade.in {
+  top: 5%;
+}
+.modal-batch {
+  overflow-y: visible;
+}
+.modal-body[class^="jviewport-height"],
+.modal-body[class*="jviewport-height"] {
+  max-height: none;
+}
+.jviewport-height10 {
+  height: 10vh;
+}
+.jviewport-height20 {
+  height: 20vh;
+}
+.jviewport-height30 {
+  height: 30vh;
+}
+.jviewport-height40 {
+  height: 40vh;
+}
+.jviewport-height50 {
+  height: 50vh;
+}
+.jviewport-height60 {
+  height: 60vh;
+}
+.jviewport-height70 {
+  height: 70vh;
+}
+.jviewport-height80 {
+  height: 80vh;
+}
+.jviewport-height90 {
+  height: 90vh;
+}
+.jviewport-height100 {
+  height: 100vh;
+}
+div.modal.jviewport-width10 {
+  width: 10vw;
+  margin-left: -5vw;
+}
+div.modal.jviewport-width20 {
+  width: 20vw;
+  margin-left: -10vw;
+}
+div.modal.jviewport-width30 {
+  width: 30vw;
+  margin-left: -15vw;
+}
+div.modal.jviewport-width40 {
+  width: 40vw;
+  margin-left: -20vw;
+}
+div.modal.jviewport-width50 {
+  width: 50vw;
+  margin-left: -25vw;
+}
+div.modal.jviewport-width60 {
+  width: 60vw;
+  margin-left: -30vw;
+}
+div.modal.jviewport-width70 {
+  width: 70vw;
+  margin-left: -35vw;
+}
+div.modal.jviewport-width80 {
+  width: 80vw;
+  margin-left: -40vw;
+}
+div.modal.jviewport-width90 {
+  width: 90vw;
+  margin-left: -45vw;
+}
+div.modal.jviewport-width100 {
+  width: 100vw;
+  margin-left: -50vw;
+}
+/* Template
+------------- */
+/*
+	Basic HTML elements
+ */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+a {
+  color: #363636;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+a.inverse,
+a:active,
+a:focus,
+a:hover {
+  color: #777;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #363636;
+  font-weight: 300;
+  margin: 0;
+}
+h2 {
+  font-size: 2rem;
+}
+fieldset {
+  border: 0;
+}
+.control-group {
+  margin-bottom: 10px;
+}
+label {
+  font-size: 1.2rem;
+}
+input:not([type="checkbox"]) {
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+}
+button {
+  background: #363636;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+button:first-child {
+  float: right;
+}
+#consentbox {
+  margin: 0;
+  padding: 0;
+}
+#consentbox input {
+  margin-left: 0;
+}
+.modal-body {
+  max-height: unset !important;
+}
