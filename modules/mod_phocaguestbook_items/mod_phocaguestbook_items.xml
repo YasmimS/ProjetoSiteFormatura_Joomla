@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+  <name>Items for Phoca Guestbook</name>
+  <author>StanisLaw.ru</author>
+  <creationDate>13.12.2017</creationDate>
+  <copyright>2017-20 StanisLaw.ru</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>st@stanislaw.ru</authorEmail>
+  <authorUrl>http://stanislaw.ru/</authorUrl>
+  <version>1.0.1</version>
+  <description>MOD_PHOCAGUESTBOOK_ITEMS_DESCRIPTION</description>
+  <files>
+    <folder>imgs</folder>
+    <folder>lang</folder>
+    <folder>tmpl</folder>
+    <filename>helper.php</filename>
+    <filename module="mod_phocaguestbook_items">mod_phocaguestbook_items.php</filename>
+  </files>
+  <languages folder="lang">
+    <language tag="en-GB">en-GB.mod_phocaguestbook_items.ini</language>
+    <language tag="ru-RU">ru-RU.mod_phocaguestbook_items.ini</language>
+  </languages>
+  <config><fields name="params"><fieldset name="basic">
+    <field name="count" type="text" default="5" label="MOD_PHOCAGUESTBOOK_ITEMS_COUNT" description="MOD_PHOCAGUESTBOOK_ITEMS_COUNT_DESCRIPTION" />
+    <field name="truncate" type="text" default="30" label="MOD_PHOCAGUESTBOOK_ITEMS_TRUNCATE" description="MOD_PHOCAGUESTBOOK_ITEMS_TRUNCATE_DESCRIPTION" />
+    <field name="datef" type="text" default="d.m.Y H:i" label="MOD_PHOCAGUESTBOOK_ITEMS_TIMEFORMAT" description="MOD_PHOCAGUESTBOOK_ITEMS_TIMEFORMAT_DESCRIPTION" />
+    <field name="ordering" type="list" default="f_dsc" label="MOD_PHOCAGUESTBOOK_ITEMS_ORDERING" description="MOD_PHOCAGUESTBOOK_ITEMS_ORDERING_DESCRIPTION">
+      <option value="f_dsc">MOD_PHOCAGUESTBOOK_ITEMS_ORDERING_DESCENDING</option>
+      <option value="l_dsc">MOD_PHOCAGUESTBOOK_ITEMS_ORDERING_ASCENDING</option>
+    </field>
+    <field name="gbid" type="text" default="1" label="MOD_PHOCAGUESTBOOK_ITEMS_GUESTBOOKID" description="MOD_PHOCAGUESTBOOK_ITEMS_GUESTBOOKID_DESCRIPTION"/>
+    <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+  </fieldset></fields></config>
+  <updateservers>
+    <server type="collection">http://stanislaw.ru/lib/joomla/mod_phocaguestbook_items.xml</server>
+    <server type="extension" priority="1" name="Items for Phoca Guestbook's Updates">http://stanislaw.ru/lib/joomla/mod_phocaguestbook_items.xml</server>
+  </updateservers>
+</extension>
